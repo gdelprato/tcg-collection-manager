@@ -1,0 +1,4 @@
+{"id":"SV2a","name":"Pokémon Card 151","logo":null,"serie":{"id":"SV","name":"Scarlet & Violet"},"releaseDate":"2023-06-16","cardCount":{"official":165,"total":210},
+ "cards":[{"id":"SV2a-001","localId":"001","name":"Bulbasaur","image":"https://assets.tcgdex.net/ja/SV/SV2a/001"},
+          {"id":"SV2a-173","localId":"173","name":"Pikachu","image":"https://assets.tcgdex.net/ja/SV/SV2a/173"},
+          {"id":"SV2a-201","localId":"201","name":"Charizard ex","image":"https://assets.tcgdex.net/ja/SV/SV2a/201"}]}

@@ -1,0 +1,4 @@
+{"object":"list","has_more":false,"data":[
+ {"id":"a1","name":"Lightning Bolt","collector_number":"125","rarity":"common","lang":"en","image_uris":{"normal":"https://cards.scryfall.io/normal/a1.jpg"}},
+ {"id":"b2","name":"Delver of Secrets // Insectile Aberration","collector_number":"51","rarity":"common","lang":"en","card_faces":[{"image_uris":{"normal":"https://cards.scryfall.io/normal/b2.jpg"}},{}]},
+ {"id":"c3","name":"Ragavan","collector_number":"138★","rarity":"mythic","lang":"en","image_uris":{"normal":"https://cards.scryfall.io/normal/c3.jpg"}}]}
