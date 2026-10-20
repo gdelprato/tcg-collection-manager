@@ -37,3 +37,31 @@ cd frontend && npm run build                  # type-check + build
 ## Stato
 
 Scaffold iniziale testato offline. Prima cosa da fare con la rete disponibile: i punti di "Da verificare per primo" in `docs/SPEC.md`.
+
+## Agenti Claude Code
+
+Definiti in `.claude/agents/`, da invocare per nome:
+
+| Agente | Uso |
+|---|---|
+| `roadmap-planner` | Sola lettura. Piano di una voce della roadmap prima di iniziare un branch |
+| `backend-dev` | API, modelli, importer, CLI e test in `backend/` |
+| `catalog-adapter` | Adapter delle fonti (TCGdex, Scryfall, nuovi giochi), `rarity.py`, fixture |
+| `frontend-dev` | Pagine, componenti, `api.ts`, `styles.css` in `frontend/` |
+| `code-reviewer` | Sola lettura. Revisione del diff contro queste convenzioni, esegue test e build |
+
+Flusso tipico: `roadmap-planner` → `backend-dev` / `catalog-adapter` → `frontend-dev` → `code-reviewer` → PR verso `main`.
+
+`.claude/settings.json` pre-autorizza test, build e le API dei cataloghi; `.claude/hooks/session-start.sh` installa le dipendenze nelle sessioni cloud.
+
+## Branch
+
+Un branch per voce della roadmap, sempre con PR verso `main`:
+
+- `chore/verify-live-apis` — "Da verificare per primo" in `docs/SPEC.md`
+- `feature/collection-page` — roadmap 2
+- `feature/wishlist-missing` — roadmap 3
+- `feature/csv-import-export` — roadmap 4
+- `feature/card-images` — roadmap 5
+- `feature/import-performance` — roadmap 6
+- `feature/photo-recognition` — roadmap 7
